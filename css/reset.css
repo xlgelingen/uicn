@@ -7,9 +7,7 @@
     padding: 0;
     outline: none;
 }
-*, :after, :before {
-    /* box-sizing: inherit; */
-}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,16 +56,45 @@ a {
 }
 
 /* 基于不同网页，需要添加的部分 */
-img {
-    /* display: inline-block; */
-    /* vertical-align: top; */
+
+/* img {
+    display: inline-block;
+    vertical-align: top;
 }
 button, input {
-    /* overflow: visible; */
+    overflow: visible;
 }
 button, input, select, textarea {
-    /* margin: 0;
+    margin: 0;
     font-family: inherit;
     font-size: inherit;
-    line-height: inherit; */
+    line-height: inherit;
+} 
+*, :after, :before {
+    box-sizing: inherit;
+}
+*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: inherit;
+    font-family: inherit;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0;
+}
+i, cite, em, var, address, dfn {
+    font-style: normal;
+}
+p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.57142858;
+    color: #34495e;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
 }
